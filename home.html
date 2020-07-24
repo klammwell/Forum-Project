@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+
+  <!--bootstrap meta/link tags-->
+  <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="wordwell.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+  <script src="home.js"> </script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+  <title> Home </title>
+</head>
+
+
+<header>
+<div class="headergrid">
+
+    <div class="mainwordwell">
+      <h1 class=logotext> <img class="logo" src="https://via.placeholder.com/100" alt="placeholder"> Wordwell </h1>
+    </div>
+
+    <div class="headerprofile" id="homeprofile">
+
+      <div class="profiletext"> <h5> <img class="profilephoto" src="https://via.placeholder.com/50" alt="My Photo"> <a href="#myProfilemenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+         Your username </a> </h5> </div>
+      <ul class="collapse list-unstyled" id="myProfilemenu">
+        <li> <a href=#> My Information </a> </li>
+        <li> <a href=#> Settings </a></li>
+      </ul>
+    </div>
+
+</div>
+</header>
+
+<body>
+
+  <div class="wrapper">
+
+    <!-- Nav Button -->
+    <div id="content">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-light">
+        <div class="container-fluid">
+            <button type="button" id="sidebarCollapse" class="btn btn-info">
+                <i class="fas fa-align-left"></i>
+
+            </button>  </div>
+    </nav>
+    </div>
+
+    <!-- Sidebar -->
+
+
+<!-- To make a drop-down menu collapsible, data-toggle="collapse" should be added to the link holding the dropdown.
+Note that I also added class="dropdown-toggle" - this class adds that little triangle on the side and helps user understand that its function.
+The link's href attribute must contain the id of the dropdown menu preceded by a hash. In this case, I used #discussionSubmenu for this approach.
+The dropdown menu itself also should have .collapse class too. -->
+
+    <nav id="sidebar">
+     <ul class="list-unstyled components">
+         <li class="active">
+             <a href="#discussionSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Discussions</a>
+             <ul class="collapse list-unstyled" id="discussionSubmenu">
+                 <li> <a href="guided.html">Guided</a> </li>
+                 <li> <a href="general.html">General</a> </li>
+             </ul>
+         </li>
+         <li>
+             <a href="#">About</a>
+         </li>
+         <li>
+             <a href="#communitySubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Community</a>
+             <ul class="collapse list-unstyled" id="communitySubmenu">
+                 <li> <a href="#">x</a> </li>
+                 <li> <a href="#">y</a> </li>
+                 <li> <a href="#">z</a> </li>
+             </ul>
+         </li>
+         <li>
+             <a href="#">Contact</a>
+         </li>
+     </ul>
+    </nav>
+
+
+    <!-- Page Content -->
+    <div id="feed">
+      <div class="container">
+        <div class="row">
+          <div class="col-10">
+            <h1> Title of Post </h1>
+          </div>
+          <div class="col" class="text-right">
+            <h6 class="text-muted" class="align-bottom"> Author Name </h6>
+          </div>
+        </div>
+        <div class="row">
+          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+        <div class="row">
+          <p> tags </p>
+        </div>
+    </div>
+
+</div>
+
+<!--not working anymore???? wtf -->
+      <script src="home.js"> </script>
+
+      <!-- Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <!-- Popper.JS -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+  <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+
+</body>
+  </div>
+
+  <footer>
+  </footer>
+
+  </html>
